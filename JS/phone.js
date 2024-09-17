@@ -15,7 +15,7 @@ const displayPhones = (phone) => {
 
   const phoneContainer = document.getElementById("phone-container");
   // clear phone container cards before adding new cards 
-  phoneContainer.innerHTML=''
+  phoneContainer.textContent=''
 
   phone.forEach((phones) => {
     console.log(phones);
@@ -57,4 +57,5 @@ const handleSearch2 =()=>{
   
 }
 
-// loadPhone();
+loadPhone();
+
