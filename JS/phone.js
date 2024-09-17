@@ -10,14 +10,17 @@ const loadPhone = async (searchText) => {
   displayPhones(phones);
 };
 
-const displayPhones = (phone) => {
+const displayPhones = (phones) => {
   // console.log(phones)
 
   const phoneContainer = document.getElementById("phone-container");
   // clear phone container cards before adding new cards 
   phoneContainer.textContent=''
 
-  phone.forEach((phones) => {
+
+  phones = phones.slice(0,12)
+
+  phones.forEach((phones) => {
     console.log(phones);
     // 1.Create a div
     const phoneCard = document.createElement("div");
